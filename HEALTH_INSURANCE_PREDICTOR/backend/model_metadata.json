@@ -1,0 +1,67 @@
+{
+  "feature_columns": [
+    "age",
+    "sex",
+    "bmi",
+    "children",
+    "smoker",
+    "region"
+  ],
+  "categorical_columns": [
+    "sex",
+    "smoker",
+    "region"
+  ],
+  "numerical_columns": [
+    "age",
+    "bmi",
+    "children"
+  ],
+  "label_encoders": {
+    "sex": {
+      "female": 0,
+      "male": 1
+    },
+    "smoker": {
+      "no": 0,
+      "yes": 1
+    },
+    "region": {
+      "northeast": 0,
+      "northwest": 1,
+      "southeast": 2,
+      "southwest": 3
+    }
+  },
+  "model_performance": {
+    "rmse": 4461.02352374666,
+    "mae": 2439.363531095726,
+    "r2_score": 0.8718138905986772
+  },
+  "feature_importance": [
+    {
+      "feature": "smoker",
+      "importance": 0.6390028388591863
+    },
+    {
+      "feature": "bmi",
+      "importance": 0.20263873740283317
+    },
+    {
+      "feature": "age",
+      "importance": 0.1313278654053782
+    },
+    {
+      "feature": "children",
+      "importance": 0.01354050507498163
+    },
+    {
+      "feature": "region",
+      "importance": 0.009435088620222253
+    },
+    {
+      "feature": "sex",
+      "importance": 0.004054964637398474
+    }
+  ]
+}
